@@ -1,0 +1,24 @@
+:root{
+    --bg-color: #ECEEE5;
+    --bg-gray: #B8B7BE;
+    --bg-green: #425F48;
+    --dark-btn: #373331;
+    --darker-btn: #222121;
+    --pink: #E57EAA;
+    --h1-yellow: #E8B953;
+    --sky-blue: #96B3E1;
+    --dark-blue: #45599F;
+    /* --highlight-yellow: #DF9B69; */
+    --dark-green: #425F48;
+    font-size: 15.5px;
+}
+
+.text-xl{
+    font-size: 1.9rem;
+    font-family: "Stack Sans Headline";
+    color: var(--dark-btn);
+}
+
+.text-lg{
+    font-size: 1.4rem;
+}
