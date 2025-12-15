@@ -932,7 +932,7 @@ button p{
 .food-drop-area{
     position: relative;
     left: -10%;
-    background-color: var(--h1-yellow);
+    background-color: #C0BFC6;
     width: 120%;
     height: 24.68rem;
     margin-inline: auto;
