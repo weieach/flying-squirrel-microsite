@@ -463,8 +463,11 @@ document.querySelectorAll("a").forEach(a => {
 
   //COPY
 
-  // MotionPathHelper.create(".img-fs");
+  // MotionPathHelper.create(".img-fs-2");
 
+  
+  
+  
   let fact2Tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".fact-1",
@@ -474,6 +477,13 @@ document.querySelectorAll("a").forEach(a => {
     },
   });
   fact2Tl
+    .to(".img-fs", {
+      autoAlpha: 0,
+    }, 0)
+    .to(".img-measurement", {
+      display: "block",
+      autoAlpha: 1,
+    }, 0)
     .from(".fact-2", {
       yPercent: 150,
     })
@@ -509,6 +519,19 @@ document.querySelectorAll("a").forEach(a => {
       },
       0
     )
+    .to(".img-fs-2", {
+      display: "block",
+      autoAlpha: 1,
+      scrub: true,
+      start: "-=200",
+      zIndex: 500,
+      end: 1,
+      xPercent: 200,
+      // yPercent: -500,
+      
+    motionPath: "M0,0 C0,31 190.555,416.374 410.569,592.557 613.483,755.051 1052.432,873.489 1277.873,877.147 ",
+  
+    })
     // .to(".img-fs", {
     //   motionPath:{
     //     path: [{x: 100, y: 100}, {x: 300, y: 20}],
@@ -528,6 +551,21 @@ document.querySelectorAll("a").forEach(a => {
     },
   });
   fact3Tl
+  .to(".img-plate", {
+    duration: 0.2,
+    yPercent: -10,
+    ease: "power4.out",
+  })
+  .to(
+    ".food-item",
+    {
+      yPercent: "random(-40, -20)",
+      rotation: "random(-20, 20)",
+
+      ease: "bounce.inOut",
+    },
+    "<"
+  )
     .from(".fact-3", {
       yPercent: 300,
     })

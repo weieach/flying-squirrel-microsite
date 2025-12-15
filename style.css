@@ -237,13 +237,19 @@ footer .name{
     opacity: 0;
 }
 
-.img-fs{
+.img-fs, .img-fs-2{
     position: absolute;
     z-index: 200;
     width: 200px;
     top: 60%;
     /* opacity: 0; */
     display: none;
+}
+
+.img-fs-2{
+    left: 0%;
+    top: 400px;
+    z-index: 10000;
 }
 
 .ph-flower{
@@ -723,6 +729,18 @@ button p{
     left: 5%;
 }
 
+.img-measurement{
+    position: absolute;
+    width: 90%;
+    margin: inline;
+    height: fit-content;
+    position: relative;
+    top: 5%;
+    left: -83%;
+    display: none;
+    opacity: 0;
+}
+
 .plane-path{
     position: absolute;
     left: 13%;
@@ -834,6 +852,7 @@ button p{
 
 .section-2-description, .section-3-lifecycle{
     margin-bottom: 5.625rem;
+    margin-top: 7rem;
 }
 
 
