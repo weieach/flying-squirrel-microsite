@@ -943,7 +943,7 @@ button p{
 
 .inner-food-wrapper{
     height: 28rem;
-    filter: saturate(50%);
+    /* filter: saturate(50%); */
 }
 
 .dropped-food{
@@ -953,7 +953,7 @@ button p{
 
 .food-item {
   position: absolute;
-  width: 60px; 
+  width: 80px; 
   height: auto;
   pointer-events: none;
 }
